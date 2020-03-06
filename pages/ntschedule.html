@@ -1,0 +1,98 @@
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/schhe.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+<body>
+<header style="border-style:solid;"><img src="images/soci.jpg" height="400px" width="100%">
+    <div class="hero-text">
+        <h1 ALIGN="CENTER" style="background:#a5a5af;"> .NET Schedule</h1>
+    </div>
+</header>
+<br>
+<table>
+    <tr>
+        <th>Topic</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+    </tr>
+    <tr>
+        <td>Authentication and Authorization</td>
+        <td>26/09/2019</td>
+        <td>28/09/2019</td>
+    </tr>
+    <tr>
+        <td>state Management</td>
+        <td>28/09/2019</td>
+        <td>30/09/2019</td>
+    </tr>
+    <tr>
+        <td>Remoting</td>
+        <td>01/10/2019</td>
+        <td>03/10/2019</td>
+    </tr>
+    <tr>
+        <td>Web Services</td>
+        <td>03/10/2019</td>
+        <td>05/10/2019</td>
+    </tr>
+</table>
+<h2>Syllabus</h2>
+<div id="accordion" style="padding:5px;background-color:lightgrey;">
+    <h3 style="border-left: 6px solid #77c9d4;
+  background-color: lightgrey;color:#012549;">Authentication and Authorization</h3>
+    <div style="background-color: lightgrey;">
+        <p>
+            Authentication And Authorization In ASP.NET Core MVC Using Cookie.
+            Security is the main concern of modern applications because anyone can steal your data if it is not secured.
+            So, if you are going to create an application where the data security is a primary concern, then think about
+            Authentication and Authorization.
+        </p>
+    </div>
+    <h3 style="border-left: 6px solid #77c9d4;
+  background-color: lightgrey;color:#012549;">state Management</h3>
+    <div style="background-color: lightgrey;">
+        <p>
+            State Management in ASP.NET Core MVC. HTTP is a stateless protocol.
+            So HTTP requests are independent messages that don't retain user values or app state.
+            We need to take additional steps to manage state between the requests.
+        </p>
+    </div>
+    <h3 style="border-left: 6px solid #77c9d4;
+  background-color: lightgrey;color:#012549;">Remoting</h3>
+    <div style="background-color: lightgrey;">
+        <p >
+            try to adopt a different RPC framework instead - ideally a platform-neutral one instead of one which is tightly coupled to .NET.
+
+            There are lots of options available. Just off the top of my head:
+
+            You could implement a Web API using ASP.NET Core, probably (but not necessarily) with a JSON payload.
+            You could use gRPC, probably (but not necessarily) using Protocol Buffers as the payload
+            You could use Thrift
+        </p>
+    </div>
+    <h3 style="border-left: 6px solid #77c9d4;
+  background-color: lightgrey;color:#012549;">Web Services</h3>
+    <div style="background-color: lightgrey;">
+        <p>
+            ASP.NET Core supports creating RESTful services, also known as web APIs, using C#.
+            To handle requests, a web API uses controllers. Controllers in a web API are classes that derive from ControllerBase .
+        </p>
+    </div>
+</div>
+<ul style="float:right;list-style:none;">
+    <li><a href="#htmlschedule" style="color:#a5a4af; text-decoration:none;"><button class="buttn" style="color:#a5a4af; text-decoration:none;width:150px;">HTML and CSS</button></a>
+    </li><li><br></li>
+    <li><a href="#msschedule" style="color:#a5a4af; text-decoration:none;"><button class="buttn" style="color:#a5a4af; text-decoration:none;width:150px;">MS.OFFICE</button></a>
+    </li><li><br></li>
+    <li><a href="#javaschedule" style="color:#a5a4af; text-decoration:none;"><button class="buttn" style="color:#a5a4af; text-decoration:none;width:150px;">JAVA</button></a>
+    </li>
+</ul>
+<br><br><br><br><br><br><br><br><br>
+</body>

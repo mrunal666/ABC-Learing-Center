@@ -1,0 +1,126 @@
+
+<head>
+    <title>Submit Form Using AJAX and jQuery</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+function REGISTRATION()
+{
+    var name = document.forms["RegForm"]["Name"];
+    var email = document.forms["RegForm"]["EMail"];
+    var city = document.forms["RegForm"]["city"];
+    var what =  document.forms["RegForm"]["Subject"];
+
+    if (name.value == "")
+    {
+        alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+
+ if (city.value == "")
+    {
+        alert("Please enter your city.");
+        city.focus();
+        return false;
+    }
+
+    if (email.value == "")
+    {
+        alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    if (email.value.indexOf("@", 0) < 0)
+    {
+        alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    if (email.value.indexOf(".", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    if (what.selectedIndex < 1)
+    {
+        alert("Please enter your course.");
+        what.focus();
+        return false;
+    }
+
+    return true;
+}
+</script>
+    <style>
+
+#form div {
+padding:10px 0 0 30px;
+color:#7F8C8D;
+
+}
+input {
+height:30px;
+margin-top:10px;
+border-radius:3px;
+padding:2px;
+width:50%;
+border-style:solid;
+border-color: #015249;
+box-shadow: 5px 5px grey;
+}
+#Subject {
+
+height:30px;
+margin-top:10px;
+border-radius:3px;
+padding:2px;
+border-style:solid;
+border-color: #015249;
+box-shadow: 5px 5px grey;
+width:50%;
+font-family: verdana;
+font-weight:bold;
+color:#7F8C8D;
+
+}
+input[type=submit] {
+background-color: #BED6A6;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-align: center;
+  color:#fff;
+width:10%;
+}
+input[type=submit]:hover{
+ background:#929593;
+}
+</style>
+</head>
+<body>
+
+    <div id="form">
+        <div >
+        <h3>Register Now !</h3>
+            <form name="RegForm"  onsubmit="return REGISTRATION()"  action="register.php" method="post">
+                <p>Name:<br> <input type="text" size=5 name="Name"> </p>
+                <p>E-mail Address:<br> <input type="text" size=65 name="EMail">  </p>
+                <p>City:<br> <input type="text" size=65 name="city"> </p>
+                <p>SELECT YOUR COURSE<br>
+                    <select type="text" value="" name="Subject" id="Subject">
+                        <option>None</option>
+                        <option>HTML CSS</option>
+                        <option>JAVA</option>
+                        <option>.NET</option>
+                        <option>MS.OFFICE</option>
+                    </select></p>
+                <p><input type="submit" value="Submit" name="Submit">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
